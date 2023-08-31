@@ -7,22 +7,20 @@
 
 # Examples
 
-    - dotfiles-main (mathiasbynens/dotfiles) 
-    - dotfiles-master (lewagon/dotfiles) 
-    - dotfiles-master (skwp/dotfiles) 
-    - dotfiles-master (holman/dotfiles) 
-    - voidrice-master (LukeSmithxyz/voidrice) 
-    - dotfiles-master (jessafraz/dotfiles) 
-    - dotfiles-master (cowboy/dotfiles) 
-    - chriskempson/base16-vim
-    - mrzool/bash-sensible
-    - config-master (mdo/config)
-    - dot-vimrc-master (hamiaozuzu/dot-vimrc)
-    - dotfiles-master (ryanb/dotfiles)
-    - dotfiles-master (thoughtbot/dotfiles)
-    - macOS-master (mzdr/macOS)
-    - osx-master (danielsaidi/osx)
-    - Dotfiles Management https://news.ycombinator.com/item?id=34296396
+    - https://github.com/mathiasbynens/dotfiles
+    - https://github.com/lewagon/dotfiles
+    - https://github.com/skwp/dotfiles
+    - https://github.com/holman/dotfiles
+    - https://github.com/LukeSmithxyz/voidrice
+    - https://github.com/jessafraz/dotfiles
+    - https://github.com/cowboy/dotfiles
+    - https://github.com/chriskempson/base16-vim
+    - https://github.com/mrzool/bash-sensible
+    - https://github.com/mdo/config             config-master 
+    - https://github.com/hamiaozuzu/dot-vimrc   dot-vimrc-master
+    - https://github.com/ryanb/dotfiles         dotfiles-master
+    - https://github.com/mzdr/macOS             macOS-master
+    - https://github.com/danielsaidi/osx        osx-master
     - https://github.com/samoshkin/dotfiles
     - https://github.com/tpope/dotfiles
     - https://github.com/ThePrimeagen/.dotfiles
@@ -40,3 +38,4 @@
 
     dotfiles management
     - https://github.com/anishathalye/dotbot
+    - https://news.ycombinator.com/item?id=34296396
