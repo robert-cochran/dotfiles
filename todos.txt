@@ -1,3 +1,4 @@
+TODOS.txt
 
 TODO    symlink
         linking .fzf.zshrc and .vim.zshrc from their app folders in the 
@@ -48,4 +49,7 @@ TODO    Add:
             https://github.com/lebriton/awesome-hackernews#feeds
             https://github.com/lebriton/awesome-hackernews#uncategorized
             https://github.com/lebriton/awesome-hackernews#vim
+        - text web (lynx, w3m, gplaces, MarginaliaSearch, gemini, gopher, finger, rss)
+        - chat (irc, usenet (comp.ai, comp.misc, alt.folklore.computers), slack client, fediverse/matrix)
+            - usenet https://news.ycombinator.com/item?id=37336606 http://www.eternal-september.org/ https://usenet.blueworldhosting.com/ 
 
