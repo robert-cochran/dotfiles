@@ -13,6 +13,8 @@ TODO    Music player - heaps to choose from (need to filter down)
         - https://github.com/hrkfdn/ncspot
         - https://github.com/librespot-org/librespot
         - https://github.com/tizonia/tizonia-openmax-il
+        - ytfzf
+        - trizen/youtube-viewer
         - less popular below
         - https://github.com/pwittchen/spotify-cli-linux
         - https://github.com/aome510/spotify-player
