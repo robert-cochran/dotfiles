@@ -1,0 +1,33 @@
+
+TODO    symlink
+        linking .fzf.zshrc and .vim.zshrc from their app folders in the 
+        repo might save the link path in the repo. dont really want to 
+        be saving my home dir path in the repo so will either need to 
+        have those files be gitignored or move them from their app 
+        folders back into the zsh_alias folder and not symlinked there
+
+
+TODO    Add:
+        - mutt
+        - newsbeuter
+        - calcurse
+        - timetrap
+            - https://github.com/samg/timetrap
+            - https://github.com/samg/timetrap_formatters
+            - checkout tui https://github.com/karlredman/Timetrap_TUI
+        - hnreader
+        https://github.com/lebriton/awesome-hackernews#cli--tui
+            https://github.com/ggerganov/hnterm
+                brew installable
+            https://github.com/aome510/hackernews-TUI
+                binary install
+                https://news.ycombinator.com/item?id=26929588
+                    see comments for further suggestions
+            https://github.com/donnemartin/haxor-news
+                pip installed
+                https://news.ycombinator.com/item?id=11518596
+                    see comments for further suggestions
+        https://github.com/lebriton/awesome-hackernews#feeds
+        https://github.com/lebriton/awesome-hackernews#uncategorized
+        https://github.com/lebriton/awesome-hackernews#vim
+

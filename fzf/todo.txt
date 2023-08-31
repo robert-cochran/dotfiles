@@ -1,0 +1,8 @@
+TODO    BROKEN .fzf.zshrc 
+        .fzf.zshrc isnt being loaded by zsh when linked into the symlinked 
+        .zsh_alias dir
+
+TODO    command t and the other one
+        get the other shortcut commands working
+        namely the one that finds strings inside the current dir
+        and the other one that searches for filenames

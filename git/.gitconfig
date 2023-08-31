@@ -1,0 +1,7 @@
+[core]
+    editor = vim
+[user]
+	name = robert-cochran
+	email = 4916242+robert-cochran@users.noreply.github.com
+[pull]
+	rebase = false

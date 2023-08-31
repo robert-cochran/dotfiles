@@ -1,0 +1,14 @@
+TODO Music player - heaps to choose from (need to filter down)
+- https://github.com/Rigellute/spotify-tui
+- https://github.com/Spotifyd/spotifyd
+- https://github.com/hrkfdn/ncspot
+- https://github.com/librespot-org/librespot
+- https://github.com/tizonia/tizonia-openmax-il
+- less popular below
+- https://github.com/pwittchen/spotify-cli-linux
+- https://github.com/aome510/spotify-player
+- https://github.com/ceuk/spotui
+- https://github.com/sudipghimire533/ytui-music
+- https://git.asdf.cafe/abs3nt/gospt/
+- https://github.com/Havard03/spotr
+- https://www.musicpd.org/clients/

@@ -1,0 +1,12 @@
+*.DS_Store
+*.swp
+
+**/.tmux
+
+**/.vim/.netrwhist
+**/.vim/backup
+**/.vim/ftplugin
+**/.vim/pack
+**/.vim/plugged
+**/.vim/view
+

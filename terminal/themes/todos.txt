@@ -1,0 +1,6 @@
+# TODO
+Things to add: 
+	alternate between themes for each new window, 
+	add transparency, 
+	opaqueness, 
+	colours on terminal
