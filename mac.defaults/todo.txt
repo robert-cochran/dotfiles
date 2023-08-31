@@ -17,6 +17,7 @@ Automatically remove apps from dock that arent added to dock and also have no
 accompanying windows open
 me immediately after doing it (even after restarting terminal)
 
+Remove itunes app and/or unmap play button from launching it
 
 - remove several icons from dock
 

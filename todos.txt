@@ -32,18 +32,18 @@ TODO    Add:
             - https://github.com/samg/timetrap_formatters
             - checkout tui https://github.com/karlredman/Timetrap_TUI
         - hnreader
-        https://github.com/lebriton/awesome-hackernews#cli--tui
-            https://github.com/ggerganov/hnterm
-                brew installable
-            https://github.com/aome510/hackernews-TUI
-                binary install
-                https://news.ycombinator.com/item?id=26929588
-                    see comments for further suggestions
-            https://github.com/donnemartin/haxor-news
-                pip installed
-                https://news.ycombinator.com/item?id=11518596
-                    see comments for further suggestions
-        https://github.com/lebriton/awesome-hackernews#feeds
-        https://github.com/lebriton/awesome-hackernews#uncategorized
-        https://github.com/lebriton/awesome-hackernews#vim
+            https://github.com/lebriton/awesome-hackernews#cli--tui
+                https://github.com/ggerganov/hnterm
+                    brew installable
+                https://github.com/aome510/hackernews-TUI
+                    binary install
+                    https://news.ycombinator.com/item?id=26929588
+                        see comments for further suggestions
+                https://github.com/donnemartin/haxor-news
+                    pip installed
+                    https://news.ycombinator.com/item?id=11518596
+                        see comments for further suggestions
+            https://github.com/lebriton/awesome-hackernews#feeds
+            https://github.com/lebriton/awesome-hackernews#uncategorized
+            https://github.com/lebriton/awesome-hackernews#vim
 
