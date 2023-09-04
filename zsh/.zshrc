@@ -9,10 +9,10 @@ unsetopt BEEP
 export EDITOR='vim'
 
 #dir explorer
-## > alias l='ls -l'
-## > alias la='ls -a'
-## > alias lla='ls -la'
-## > alias lt='ls --tree'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 alias lla="ls -la"
 alias tree="tree -C -a"
 #source ${HOME}/.config/broot/launcher/bash/br
@@ -56,3 +56,5 @@ done
 # check if ${HOME}/.extras.zshrc exists, if so load
 [ -f ${HOME}/.extras.zshrc ] && source ${HOME}/.extras.zshrc
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
