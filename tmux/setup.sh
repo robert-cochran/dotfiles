@@ -4,7 +4,6 @@ local DOTFILES_DIR=${HOME}/dotfiles
 
 # install tmux
 if ! command -v tmux > /dev/null; then
-
     echo "Install tmux \n"
     brew install tmux
 else
@@ -13,7 +12,7 @@ else
 fi
 
 # install plugin manager if it doenst already exist
-# NOTE: logic here is wrong, clones regardless of dir existing
+# NOTE: logic here is wrong, clones regardless of dir already existing
 [ ! -f ${DOTFILES_DIR}/tmux/.tmux/plugins/tmp ] && \
     git clone https://github.com/tmux-plugins/tpm ./.tmux/plugins/tpm
 
