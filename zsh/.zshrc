@@ -37,12 +37,12 @@ export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
 #export TERM=xterm-256color
 
 SOURCENAMES=(
-    "java" 
+#    "java" #only include once java has runtimes installed
     "aptrk" 
     "vim" 
     "python" 
-    "ztl" 
-    "fzf"
+#    "ztl" 
+#    "fzf" #only include once fzf has been installed
     #antigen
 ) 
 
