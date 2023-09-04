@@ -1,26 +1,27 @@
-#######################################################################
-#                       Package Manager - Brew                        #
-#######################################################################
+#!/bin/zsh
 
 if ! command -v brew > /dev/null; then
 
     echo "Install Brew via curl \n"
+    # NOTE: install script written for bash, not zsh
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    echo "Adding brew to zsh path"
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') \
+        >> ${HOME}/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 
     echo "Install Homebrew Cask \n"
 	brew tap homebrew/cask
 
-	echo "[SYSTEM] Install Brew Bundle \n"
+	echo "Install Brew Bundle \n"
 	brew tap Homebrew/bundle
 else
-    echo "[SYSTEM] Update brew \n"
+    echo "Update brew \n"
     brew update
 fi
 
 # Brew Bundle
-# I haven't verified wha tthis does yet but it looks like a list of all brew
-# files downloaded. Which i guess ive already done with the other files
-# --------------------------------------
 # Then pass in the Brewfile location...
 # brew bundle --file ~/.dotfiles/Brewfile
 #
