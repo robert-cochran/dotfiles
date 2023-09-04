@@ -1,5 +1,9 @@
 TODOS.txt
 
+TODO    fix fzf (and other) zshrc not being loaded into the zshrc before app's 
+        have been installed. that way apps aren't trying to load config's and
+        causing errors when terminal is booted up
+
 TODO    symlink
         linking .fzf.zshrc and .vim.zshrc from their app folders in the 
         repo might save the link path in the repo. dont really want to 
