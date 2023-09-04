@@ -22,5 +22,5 @@ fi
 ln -sf ${DOTFILES_DIR}/zsh/.zshrc ~/.zshrc
 
 # symlink zsh_alias dir to home
-ln -sf ${DOTFILES_DIR}/zsh/.zsh_alias  ~/.zsh_alias
+ln -sf ${DOTFILES_DIR}/zsh/.zsh_alias  ~/
 
