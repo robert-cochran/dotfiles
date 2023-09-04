@@ -1,10 +1,6 @@
 #!/bin/zsh
 
-
-
-# xcode (don't actually think this 
-# is needed to be installed first)
-./xcode/setup.sh 
+# xcode-select --install
 
 # brew (requires curl)
 ./brew/setup.sh
