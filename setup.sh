@@ -5,20 +5,15 @@
 # brew (requires curl)
 ./brew/setup.sh
 
-./git/setup.sh
-
 # installations via brew
+# -- git done first
+./git/setup.sh
 ./zsh/setup.sh
-
 ./vim/setup.sh
-
 ./tmux/setup.sh
-
 ./mac.defaults/setup.sh
-
-./tmux/setup.sh
-
 ./terminal/setup.sh
 
 # relies on git and is also plugin for vim
 ./fzf/setup.sh
+

@@ -1,7 +1,7 @@
 *.DS_Store
 *.swp
 
-**/.tmux
+**/.tmux/
 
 **/.zsh_alias/.vim.zshrc
 **/.zsh_alias/.fzf.zshrc
