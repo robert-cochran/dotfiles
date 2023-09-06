@@ -3,7 +3,7 @@
 
 **/.tmux
 
-zsh/.zsh_alias/.vim.zshrc
+**/.zsh_alias/.vim.zshrc
 
 **/.vim/.netrwhist
 **/.vim/backup
