@@ -1,24 +1,32 @@
 #!/bin/zsh
 
-if ! command -v brew > /dev/null; then
+local DOTFILES_DIR=${HOME}/dotfiles
 
-    echo "Install Brew via curl \n"
+echo "brew setup.sh"
+
+if ! type brew > /dev/null; then
+
+    echo "[INSTALL] brew via curl \n"
     # NOTE: install script written for bash, not zsh
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /bin/bash -c "$(curl -fsSL \
+        https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    echo "Adding brew to zsh path"
+    echo "[PATH] Adding brew to zsh path"
     (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') \
         >> ${HOME}/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
-    echo "Install Homebrew Cask \n"
+    echo "[INSTALL] Homebrew Cask \n"
 	brew tap homebrew/cask
 
-	echo "Install Brew Bundle \n"
+	echo "[INSTALL] Brew Bundle \n"
 	brew tap Homebrew/bundle
+
 else
-    echo "Update brew \n"
+
+    echo "[UPDATE] brew \n"
     brew update
+
 fi
 
 # Brew Bundle
@@ -27,3 +35,6 @@ fi
 #
 # # ...or move to the directory first.
 # cd ~/.dotfiles && brew bundle
+
+echo "brew setup finished"
+

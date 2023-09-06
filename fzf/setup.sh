@@ -3,7 +3,7 @@
 local DOTFILES_DIR=${HOME}/dotfiles
 
 
-echo "fzf setup.sh"
+echo "[FZF] setup.sh"
 
 if ! type brew > /dev/null; then
 

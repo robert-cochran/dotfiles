@@ -1,26 +1,35 @@
 #!/bin/zsh
 
 local DOTFILES_DIR=${HOME}/dotfiles
+local APP=zsh
 
-echo "Setting up ZSH"
-# install zsh 
-# check xcode is installed (so that homebrew can be installed)
+echo "[$APP] setup.sh"
 
-if ! command -v brew > /dev/null; then
-    echo "Install zsh via brew \n"
-    brew install zsh
+if ! type brew > /dev/null; then
+
+    [ -f ${DOTFILES_DIR}/brew/setup.sh ] && \
+        echo "[SETUP] Installing brew" && \
+        ${DOTFILES_DIR}/brew/setup.sh
+    
 fi
 
-#cp ./dotfiles/.bash_profile ~
-#cp ./dotfiles/.zshrc ~
+if ! brew list | grep $APP > /dev/null; then
 
+    echo "[INSTALL] $APP via brew"
+    brew install $APP
 
-#echo "Installing ZSH"
+else
+
+    echo "[UPDATE] $APP already installed, updating via brew"
+    brew upgrade $APP
+    
+fi
+
+echo "[LINK] .zshrc to ~"
+ln -sf ${DOTFILES_DIR}/$APP/.zshrc ~/.zshrc
+
+echo "[LINK] .zsh_alias to ~"
+ln -sf ${DOTFILES_DIR}/$APP/.zsh_alias  ~/
+
+# NOTE: ohmyzsh installed in .default.zshrc
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# symlink zshrc to home
-ln -sf ${DOTFILES_DIR}/zsh/.zshrc ~/.zshrc
-
-# symlink zsh_alias dir to home
-ln -sf ${DOTFILES_DIR}/zsh/.zsh_alias  ~/
-
