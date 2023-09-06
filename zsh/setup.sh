@@ -29,7 +29,7 @@ echo "[LINK] .zsh_alias to ~"
 ln -sf ${DOTFILES_DIR}/$APP/.zsh_alias  ~/
 
 # NOTE: ohmyzsh installed in .default.zshrc
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "$APP setup finished \n"
 

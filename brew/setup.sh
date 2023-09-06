@@ -13,8 +13,7 @@ if ! type brew > /dev/null; then
         https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     echo "[PATH] Adding brew to zsh path"
-    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') \
-        >> ${HOME}/.zprofile
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ${HOME}/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
     echo "[INSTALL] Homebrew Cask"
