@@ -3,7 +3,7 @@
 local DOTFILES_DIR=${HOME}/dotfiles
 local APP=git
 
-echo "[$APP] setup.sh"
+echo "\n[$APP] setup.sh"
 
 if ! type brew > /dev/null; then
     [ -f ${DOTFILES_DIR}/brew/setup.sh ] && \
@@ -24,4 +24,6 @@ fi
 
 echo "[LINK] .gitconfig to ~"
 ln -sf ${DOTFILES_DIR}/$APP/.gitconfig ~/.gitconfig
+
+echo "[$APP] setup finished \n"
 

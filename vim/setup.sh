@@ -3,7 +3,7 @@
 local DOTFILES_DIR=${HOME}/dotfiles
 local APP=vim
 
-echo "[$APP] setup.sh"
+echo "\n[$APP] setup.sh"
 
 # INSTALLING BREW
 if ! type brew > /dev/null; then
@@ -35,5 +35,5 @@ ln -sf ${DOTFILES_DIR}/$APP/.vim ${HOME}
 echo "[LINK] .vim.zshrc to ~/.zsh_alias"
 ln -sf ${DOTFILES_DIR}/$APP/.vim.zshrc ${HOME}/.zsh_alias
 
-echo "vim setup finished"
+echo "[$APP] setup finished \n"
 

@@ -3,7 +3,7 @@
 local DOTFILES_DIR=${HOME}/dotfiles
 local APP=tmux
 
-echo "[$APP] setup.sh"
+echo "\n[$APP] setup.sh"
 
 
 if ! type brew > /dev/null; then
@@ -39,4 +39,5 @@ ln -sf ${DOTFILES_DIR}/$APP/.tmux.conf ${HOME}/.tmux.conf
 # load tmux conf
 tmux source ~/.tmux.conf
 
+echo "[$APP] setup finished \n"
 
