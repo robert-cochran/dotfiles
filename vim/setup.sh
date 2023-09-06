@@ -29,14 +29,14 @@ fi
 # TODO install vim plugin manager
 # otherwise plugins in vimrc will cause errors when zsh starts
 
-echo "[LN] linking .vimrc to ~"
+echo "[LINK] linking .vimrc to ~"
 ln -sf ${DOTFILES_DIR}/vim/.vimrc ~/.vimrc
 
-echo "[LN] linking .vim to ~"
+echo "[LINK] linking .vim to ~"
 ln -sf ${DOTFILES_DIR}/vim/.vim ~/
 
 # TODO symlink zsh aliases into zsh_alias
-echo "[LN] linking .vim.zshrc to ~/.zsh_alias"
+echo "[LINK] linking .vim.zshrc to ~/.zsh_alias"
 ln -sf ${DOTFILES_DIR}/vim/.vim.zshrc ~/.zsh_alias
 
 #echo "copying .vim.zshrc to ~'s .zsh_alias"
