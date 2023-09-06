@@ -30,9 +30,8 @@ else
 
 fi
 
-
 echo "[LINK] .fzf.zshrc to ~/.zsh_alias"
 ln -sf ${DOTFILES_DIR}/fzf/.fzf.zshrc ${HOME}/.zsh_alias
 
-echo "Vim setup finished \n"
+echo "fzf setup finished \n"
 

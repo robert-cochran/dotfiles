@@ -2,7 +2,7 @@
 
 local DOTFILES_DIR=${HOME}/dotfiles
 
-echo "Vim setup.sh"
+echo "vim setup.sh"
 
 if ! type brew > /dev/null; then
 
@@ -16,7 +16,7 @@ if ! brew list | grep vim > /dev/null; then
 
     # NOTE: mac comes preinstalled with vim. to upgrade vim either compile 
     # it to /usr/bin/vim, or install/upgrade with brew, (or use neovim)
-    echo "[INSTALL] Vim via brew"
+    echo "[INSTALL] vim via brew"
     brew install vim
 
 fi
@@ -35,5 +35,5 @@ ln -sf ${DOTFILES_DIR}/vim/.vim ${HOME}
 echo "[LINK] .vim.zshrc to ~/.zsh_alias"
 ln -sf ${DOTFILES_DIR}/vim/.vim.zshrc ${HOME}/.zsh_alias
 
-echo "Vim setup finished"
+echo "vim setup finished"
 
