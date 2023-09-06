@@ -19,6 +19,6 @@ me immediately after doing it (even after restarting terminal)
 
 Remove itunes app and/or unmap play button from launching it
 
-- remove several icons from dock
+remove several icons from dock
 
-- add the 'do not use timemachine' defaults flag
+add the 'do not use timemachine' defaults flag

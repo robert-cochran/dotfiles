@@ -1,5 +1,4 @@
-enable/fix zsh plugins not working 
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-
-https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
+TODO    enable/fix zsh plugins not working 
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+        https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins

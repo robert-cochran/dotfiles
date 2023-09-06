@@ -1,9 +1,9 @@
-automated theme importing doesnt work
-    have to manually import each theme
+TODO    automated theme importing doesnt work
+        have to manually import each theme
 
-automated visual bell flash disabling doesnt work
+TODO    automated visual bell flash disabling doesnt work
 
-automated turning on of option key as meta key
+TODO    automated turning on of option key as meta key
 
 
 TODO    I think I can export the current terminal settings and have those above
