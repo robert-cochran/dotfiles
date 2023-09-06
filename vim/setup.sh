@@ -11,9 +11,9 @@ echo "Vim setup.sh"
 
 if ! type brew > /dev/null; then
 
-    echo "[SETUP] Installing brew"
-    [ -f ~/.zsh_alias/.default.zshrc ] && source ~/.zsh_alias/.default.zshrc
-    ../brew/setup.sh
+    [ -f ${DOTFILES_DIR}/brew/setup.sh ] && \
+        echo "[SETUP] Installing brew" && \
+        ${DOTFILES_DIR}/brew/setup.sh
     
 fi
 
