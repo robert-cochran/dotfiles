@@ -12,6 +12,7 @@ filetype plugin on
 let mapleader = " "
 "Enable Quicksave
 "map <Esc><Esc> :w<CR>
+set backspace=indent,eol,start
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COLORS AND FONTS
@@ -151,7 +152,7 @@ set tw=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
-call plug#begin()
+""call plug#begin()
 "call plug#begin('~/.vim/addons')
 
 
@@ -169,8 +170,8 @@ call plug#begin()
 "	fuzzy finder - nvim: 
 "	Plug 'nvim-telescope/telescope.nvim' 
 " 	fuzzy finder - vim: 
-    Plug 'junegunn/fzf.vim'
-    Plug 'junegunn/fzf'
+""    Plug 'junegunn/fzf.vim'
+""    Plug 'junegunn/fzf'
 "   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "   fzf.vim
 
@@ -200,7 +201,7 @@ call plug#begin()
 "   Plug 'github/copilot.vim'`
 
 "   git
-    Plug 'tpope/vim-fugitive' "note: run :Git to use
+""    Plug 'tpope/vim-fugitive' "note: run :Git to use
 "   https://github.com/junegunn/gv.vim "note: requires vim-fugitive
 "   https://github.com/airblade/vim-gitgutter "note: viewing git diffs 
 "   in vim but not awful (well we'll see anyway)
@@ -214,7 +215,7 @@ call plug#begin()
 "   Plug 'junegunn/goyo.vim' " (distraction free vim)
 "	Plug 'ghifarit53/tokyonight-vim'
 
-call plug#end()
+""call plug#end()
 
 
 " Use <Tab> and <S-Tab> to navigate the completion list

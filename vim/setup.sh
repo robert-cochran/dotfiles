@@ -2,35 +2,46 @@
 
 local DOTFILES_DIR=${HOME}/dotfiles
 
-if ! command -v brew > /dev/null; then
+# This check isn't right. 
+# Since vim comes preinstalled with mac it shouldn't check if vim is present,
+# it needs to check if vim has been installed by brew
+#if ! type vim > /dev/null ; then
+
+if ! type brew > /dev/null; then
+
+    echo "[SETUP] Installing brew"
+    ../brew/setup.sh
+    
+fi
+
+if ! brew list | grep vim > /dev/null; then
 
     # NOTE: mac comes preinstalled with vim. to upgrade vim either compile 
     # it to /usr/bin/vim, or install/upgrade with brew, (or use neovim)
+    echo "Installing vim via brew"
     brew install vim
 
 fi
 
-# NOTE: if command not working here for some reason
-#if ! command -v vim > /dev/null; then
 
-    # TODO install vim plugin manager
-    # otherwise plugins in vimrc will cause errors when zsh starts
-    
-    # symlink .vimrc to home dir
-    ln -sf ${DOTFILES_DIR}/vim/.vimrc ~/.vimrc
+if  brew list | grep vim > /dev/null; then
 
-    # symlink .vim/ to home dir
-    ln -sf ${DOTFILES_DIR}/vim/.vim ~/
+    echo "vim installed by brew"
 
-    # symlink zsh aliases into zsh_alias
-    # ln -sf ${DOTFILES_DIR}/vim/.vim.zshrc ~/.zsh_alias
-    # cp ${DOTFILES_DIR}/vim/.vim.zshrc
+fi
 
-#fi
+# TODO install vim plugin manager
+# otherwise plugins in vimrc will cause errors when zsh starts
 
+echo "linking .vimrc to ~"
+ln -sf ${DOTFILES_DIR}/vim/.vimrc ~/.vimrc
 
+echo "linking .vim to ~"
+ln -sf ${DOTFILES_DIR}/vim/.vim ~/
 
+# TODO symlink zsh aliases into zsh_alias
+# ln -sf ${DOTFILES_DIR}/vim/.vim.zshrc ~/.zsh_alias
 
-
-
+echo "copying .vim.zshrc to ~'s .zsh_alias"
+cp ${DOTFILES_DIR}/vim/.vim.zshrc ${HOME}/.zsh_alias
 
