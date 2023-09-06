@@ -1,31 +1,38 @@
 #!/bin/zsh
 
-
 local DOTFILES_DIR=${HOME}/dotfiles
 
-# NOTE: fzf also a plugin for vim
 
-if ! command -v fzf > /dev/null; then
+echo "fzf setup.sh"
 
-    echo "Install fzf \n"
+if ! type brew > /dev/null; then
+
+    [ -f ${DOTFILES_DIR}/brew/setup.sh ] && \
+        echo "[SETUP] Installing brew" && \
+        ${DOTFILES_DIR}/brew/setup.sh
+    
+fi
+
+# NOTE: fzf's also a plugin for vim
+if ! type fzf > /dev/null; then
+
+    echo "[INSTALL] cloning fzf via git"
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    echo "[INSTALL] fzf \n"
     ~/.fzf/install
+
 else
-    echo "[SYSTEM] Update fzf \n"
+
+    echo "[UPDATE] fzf via git"
     popd ~/.fzf
-    git pull
+        git pull
     pushd
+
 fi
 
 
-echo "Link fzf to home dir \n"
-# symlink zsh aliases into zsh_alias
-# .fzf.zshrc has all custom settings
-#   NOTE:   This will save a symlink with the full path to the dir, 
-#   meaning the user's home dir name will be saved into the repo.
-#   Need to find way around this
-#ln -sf ${DOTFILES_DIR}/fzf/.fzf.zshrc ~/.zsh_alias
+echo "[LINK] .fzf.zshrc to ~/.zsh_alias"
+ln -sf ${DOTFILES_DIR}/fzf/.fzf.zshrc ${HOME}/.zsh_alias
 
-# these were in ~ but not sure its needed. seems boilerplate
-#ln -sf ~/dotfiles/fzf/.fzf.bash ~/.fzf.bash
-#ln -sf ~/dotfiles/fzf/.fzf.zsh  ~/.fzf.zsh
+echo "Vim setup finished \n"
+
