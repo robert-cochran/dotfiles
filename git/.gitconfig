@@ -5,3 +5,6 @@
 	email = 4916242+robert-cochran@users.noreply.github.com
 [pull]
 	rebase = false
+[push]
+    autoSetupRemote = true
+    default = simple
