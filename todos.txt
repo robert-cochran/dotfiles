@@ -1,5 +1,7 @@
 TODOS.txt
 
+TODO    move everything out of this folder setup with symlinking. 
+        feels awkward 
 
 TODO    Music player - heaps to choose from (need to filter down)
         - https://github.com/Rigellute/spotify-tui
