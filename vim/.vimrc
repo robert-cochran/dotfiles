@@ -10,7 +10,8 @@ syntax on
 set laststatus=2
 filetype plugin on
 let mapleader = " "
-"Enable Quicksave
+"Enable Quicksave (note: disabled due to delay imposed by vim waiting for second
+"key press)
 "map <Esc><Esc> :w<CR>
 set backspace=indent,eol,start
 
