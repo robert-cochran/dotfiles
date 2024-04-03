@@ -17,11 +17,11 @@
 *
 #!*/ 
 #!.git
-!.gitconfig
 !.gitignore
-!tmux/
+!.gitconfig
+!.tmux/
 !.tmux.conf
-!vim/
+!.vim/
 !.vimrc
-!zsh_alias/
+!.zsh_alias/
 !.zshrc
