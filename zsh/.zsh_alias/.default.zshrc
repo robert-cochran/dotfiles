@@ -10,13 +10,13 @@ ZSH_THEME="random"
 ZSH_THEME_RANDOM_QUIET="true"
 # a theme from this variable instead of looking in $ZSH/themes/                 
 ZSH_THEME_RANDOM_CANDIDATES=(  
-    "avit" 
-#    "frisk" 
-#    "frontcube" 
-#    "gnzh" 
-#    "imajes" 
+#    "avit"
+#    "frisk"
+     "frontcube"
+#    "gnzh"
+#    "imajes"
 #    "jispwoso"
-#    "junkfood"   
+#    "junkfood"
 )
 
 # to know which specific one was loaded, run: echo $RANDOM_THEME                
