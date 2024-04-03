@@ -19,9 +19,9 @@
 #!.git
 !.gitconfig
 !.gitignore
-!tmux/*
+!tmux/
 !.tmux.conf
-!vim/*
+!vim/
 !.vimrc
-!zsh_alias/*
+!zsh_alias/
 !.zshrc
