@@ -1,3 +1,0 @@
-TODO  add https://github.com/kevinhwang91/rnvimr
-
-TODO  carry over plugins from vim to nvim

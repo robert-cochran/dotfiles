@@ -1,4 +1,0 @@
-TODO    add the hook to git to add branch name to commit message
-        google: prepare-commit-msg hook
-
-TODO    check out tig (brew install tig), pretty cool git app
