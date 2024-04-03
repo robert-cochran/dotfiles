@@ -1,8 +1,12 @@
-[core]
-    editor = vim
 [user]
 	name = robert-cochran
 	email = 4916242+robert-cochran@users.noreply.github.com
+[core]
+    editor = vim
+    pager = cat
+[color]
+    ui = true
+    diff = always
 [pull]
 	rebase = false
 [push]
