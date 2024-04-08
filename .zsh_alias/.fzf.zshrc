@@ -7,14 +7,18 @@
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-
-
-
 ##### FZF CONFIG
 # NOTE: default fzf keybindings / shortcuts CTRL-T / CTRL-R / ALT-C
 # NOTE: cmd **<tab> will run fzf and replace ** with fzf result
 #       e.g. vim **<tab> will use fzf to find file to then open with vim
+
+
+#__fzfcmd() {
+#    [ -n "${TMUX_PANE-}" ] \
+#    && { [ "${FZF_TMUX:-0}" != 0 ] || [ -n "${FZF_TMUX_OPTS-}" ]; } \
+#    && echo "fzf-tmux ${FZF_TMUX_OPTS:--d${FZF_TMUX_HEIGHT:-40%}} -- " \
+#    || echo "fzf"
+#}
 
 local __fzf_fd_default_search_pattern="."
 local __fzf_default_search_dir="$HOME"

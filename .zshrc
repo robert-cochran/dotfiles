@@ -16,7 +16,8 @@ SOURCENAMES=(
     "vim" 
     "python" 
     # ztl
-    # fzf #only include once fzf has been installed
+    "fzf"
+    #only include once fzf has been installed
     # antigen
     # ${HOME}/.config/broot/launcher/bash/br
 ) 
@@ -27,5 +28,5 @@ do
         source ~/.zsh_alias/."$name".zshrc
 done
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

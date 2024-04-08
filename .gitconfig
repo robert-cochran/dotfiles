@@ -12,3 +12,5 @@
 [push]
     autoSetupRemote = true
     default = simple
+[advice]
+    addIgnoredFile = false
