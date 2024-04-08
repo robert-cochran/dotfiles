@@ -7,3 +7,6 @@ alias vrc="vim ~/.vimrc"
 alias vconf="cd ~/.vim/"
 alias vptsk="cd ~/.vim/plugin/tasks"
 alias vsyntax="vim ~/.vim/syntax/txt.vim"
+
+#vimtasks
+#alias vtasks="vim ~/sandbox/vim.tasks/TASKS/tasks.txt"
