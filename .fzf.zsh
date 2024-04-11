@@ -1,7 +1,7 @@
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == */Users/mac/.fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/Users/mac/.fzf/bin"
+  PATH="${PATH:+${PATH}:}${HOME}/.fzf/bin"
 fi
 
 
@@ -9,8 +9,8 @@ fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/Users/mac/.fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "${HOME}/.fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
 # ------------
-source "/Users/mac/.fzf/shell/key-bindings.zsh"
+source "${HOME}/.fzf/shell/key-bindings.zsh"
