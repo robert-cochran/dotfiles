@@ -7,6 +7,10 @@
 
 !.vimrc
 !.vim/
+!.vim/cheatsheet.vim
+!.vim/colourscheme.vim
+!.vim/misc.vim
+!.vim/plugins.vim
 !.vim/plugin/
 !.vim/plugin/**
 !.vim/syntax/
