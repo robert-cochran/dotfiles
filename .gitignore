@@ -4,6 +4,8 @@
 !.gitconfig
 
 !.tmux.conf
+!.tmux/
+!.tmux/git-commands-using-menu.tmux
 
 !.vimrc
 !.vim/
