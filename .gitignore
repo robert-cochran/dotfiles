@@ -8,6 +8,8 @@
 !.tmux/scripts/
 !.tmux/scripts/git-commands-using-menu.tmux
 !.tmux/scripts/battery.sh
+!.tmux/scripts/tmux-spotify-info
+
 
 !.vimrc
 !.vim/
