@@ -6,6 +6,7 @@
 !.tmux.conf
 !.tmux/
 !.tmux/git-commands-using-menu.tmux
+!.tmux/battery.sh
 
 !.vimrc
 !.vim/
