@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# send-keys has been introduced in 2008. 
+# I've used send-keys for example to make an interactive menu in bash to send 
+#   git commands to another pane. Very simple but also very convenient. 
+
 # Original solution sourced from:
 #       https://unix.stackexchange.com/questions/146570/arrow-key-enter-menu
 #
