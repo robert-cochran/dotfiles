@@ -4,9 +4,6 @@
 !.gitconfig
 
 !.tmux.conf
-!.tmux/
-!.tmux/.plugins.tmux.conf
-!.tmux/.vim.tmux.conf
 
 !.vimrc
 !.vim/
