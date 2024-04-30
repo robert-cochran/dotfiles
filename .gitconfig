@@ -3,7 +3,7 @@
 	email = 4916242+robert-cochran@users.noreply.github.com
 [core]
     editor = vim
-    pager = cat
+    pager = less
 [color]
     ui = true
     diff = always
