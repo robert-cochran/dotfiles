@@ -10,7 +10,6 @@
 !.tmux/scripts/battery.sh
 !.tmux/scripts/tmux-spotify-info
 
-
 !.vimrc
 !.vim/
 !.vim/cheatsheet.vim
@@ -28,3 +27,7 @@
 !.zsh_alias/**
 
 !.fzf.zsh
+
+!.config/
+!.config/nvim/
+!.config/nvim/TODO

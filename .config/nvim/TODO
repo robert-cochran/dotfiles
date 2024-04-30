@@ -1,0 +1,18 @@
+Sort through and merge together personal nvim config from 
+- dam9000/kickstart-modular.nvim
+- max-taylor/dotfiles
+- nvchad/nvchad
+
+Add coc/coq
+- https://github.com/neoclide/coc.nvim 
+- https://github.com/ms-jpq/coq_nvim
+
+Add language server for java
+
+Add existing config from .vimrc to nvim
+
+Add telescope
+
+What is .stylua.toml for?
+
+Add necessary nvim files I need to .gitignore
