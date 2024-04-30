@@ -1,6 +1,32 @@
 ".vimrc
 
-" ~/.vim/cheatsheet.vim 
+" CHEATSHEET
+" MODES: normal, visual, insert, command?
+" :map - recursive version of various mapping commands
+" :noremap - non-recursive versions of various mapping commands
+" :nnoremap - normal mode non-recursive remap
+" :inoremap - insert mode nonrecursive remap
+" :xmap - visual mode
+" :xnoremap - visual mode non-recursive
+" MODE TYPES:
+" n: normal only
+" v: visual and select
+" o: operator-pending
+" x: visual only
+" s: select only
+" i: insert
+" c: command-line
+" l: insert, command-line, regexp-search
+"   (and others. Collectively called \"Lang-Arg\" pseudo-mod
+" MODE HELP:
+" - :help :map
+" - :help :noremap
+" - :help recursive_mapping
+" - :help :map-modes
+" KEYBINDINGS/MAPPINGS:
+" <S-Tab> - shit tab
+" <C-d> - 'de-tab'
+" << - 'de-tab'
 
 " GENERAL
 set nocompatible                " turns off vi compatibility
@@ -8,7 +34,6 @@ set number                      " Line numbering
 syntax on                       " Enable syntax highlighting
 set laststatus=2                " Sets status bar hght (always show status line)
 filetype plugin on        " enables both filetype detection and filetype plugins
-let mapleader = " "             " map leader to space
 set backspace=indent,eol,start  " allow unrestricted backspacing in insert mode
 set hlsearch                    " highlight searches
 set ruler
@@ -21,12 +46,14 @@ set autoindent                  " keep indentation from previous line
 set tw=80                       " automatically hard wrap at 80 columns
 set hidden
 set autochdir
-set noswapfile                  " don't create swap files
-"filetype plugin indent on     " show existing tab with 4 spaces width
+"set noswapfile                  " don't create swap files
+"filetype plugin indent on        " show existing tab with 4 spaces width
 
 " REMAPS
-" insert mode: map shift-tab to ctrl-d
-inoremap <S-Tab> <C-d>
+" map leader to <space>
+let mapleader = " "
+" insert mode: map shift-tab to ctrl-d. why?
+"inoremap <S-Tab> <C-d>
 " Move to the parent task file 
 :noremap <leader>pt ggj$bgf
 " Use <Tab> to navigate the completion list forward
