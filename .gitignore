@@ -28,3 +28,5 @@
 !.zsh_alias/**
 
 !.fzf.zsh
+
+!.muttrc
