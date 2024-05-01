@@ -24,7 +24,7 @@
 " - :help recursive_mapping
 " - :help :map-modes
 " KEYBINDINGS/MAPPINGS:
-" <S-Tab> - shit tab
+" <S-Tab> - shift tab
 " <C-d> - 'de-tab'
 " << - 'de-tab'
 
