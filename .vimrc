@@ -24,9 +24,10 @@
 " - :help recursive_mapping
 " - :help :map-modes
 " KEYBINDINGS/MAPPINGS:
-" <S-Tab> - shit tab
-" <C-d> - 'de-tab'
-" << - 'de-tab'
+" <S-Tab> - shift tab
+" <C-d> - 'de-tab' in insert mode
+" <C-t> - 'tab' in insert mode
+" << - 'de-tab' in normal mode
 
 " GENERAL
 set nocompatible                " turns off vi compatibility
@@ -52,8 +53,11 @@ set autochdir
 " REMAPS
 " map leader to <space>
 let mapleader = " "
-" insert mode: map shift-tab to ctrl-d. why?
-"inoremap <S-Tab> <C-d>
+" normal mode: map shift-tab to << (de-tab)
+nnoremap <S-Tab> <<
+" insert mode: map shift-tab to ctrl-d (de-tab)
+" NOTE: not working. debugging tips https://stackoverflow.com/a/54163497
+inoremap <S-Tab> <C-d>
 " Move to the parent task file 
 :noremap <leader>pt ggj$bgf
 " Use <Tab> to navigate the completion list forward
@@ -64,7 +68,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 vnoremap Y "*y
 " visual mode: leader+cp pastes text from shared " buffer
 noremap <Leader>cp "*p
-" Press Space to turn off highlighting
+" Press Space to turn off highlighted search terms
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> 
 
 " COLORS

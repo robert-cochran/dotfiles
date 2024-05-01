@@ -1,18 +1,35 @@
-Sort through and merge together personal nvim config from 
-- dam9000/kickstart-modular.nvim
-- max-taylor/dotfiles
-- nvchad/nvchad
+Read through all plugins, merge wanted plugins into single dir
 
+Add language server for java
 Add coc/coq
 - https://github.com/neoclide/coc.nvim 
 - https://github.com/ms-jpq/coq_nvim
 
-Add language server for java
 
-Add existing config from .vimrc to nvim
+Replace 'gc' with cmd-/ for auto commenting lines
 
-Add telescope
 
-What is .stylua.toml for?
+Where did the cool git gutter icons come from?
+
+What does the statusline.lua file do?
+
+Get directory plugin so I can split windows with nvim instead of splitting 
+panes with tmux
 
 Add necessary nvim files I need to .gitignore
+
+Get file explorer to show itself automatically?
+
+COLOUR SCHEMES
+Merge colours.lua and tokyonight plugin?
+-- or yeet colours.lua? is it worth having?
+-- what benefit is having colours.lua vs tokyonight?
+:Telescope colorschem - where are these colours sourced from?
+How do i set seashells as nvim colour scheme
+what is colors dir for?
+What is .stylua.toml for?
+
+nvim start is slow! speed up nvim launch. see 
+ https://github.com/brainfucksec/neovim-lua/blob/main/nvim/lua/core/options.lua
+ this has option to disable a lot of plugins on startup
+ remove all plugins i dont need.

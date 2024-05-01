@@ -31,3 +31,11 @@
 !.config/
 !.config/nvim/
 !.config/nvim/TODO
+!.config/nvim/init.lua
+!.config/nvim/lua
+!.config/nvim/lua/options.lua
+!.config/nvim/lua/keymaps.lua
+!.config/nvim/lua/lazy-bootstrap.lua
+!.config/nvim/lua/lazy-plugins.lua
+!.config/nvim/lua/plugins
+!.config/nvim/lua/plugins/*
